@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery Basic</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- first task (alert pop-up) -->
+    <b
+      >Create a paragraph and pop-up a alert message"Clicked me" when you click
+      inside paragraph</b
+    >
+    <p id="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat officia
+      molestias a quae, accusantium inventore labore enim dolores est deserunt
+      veritatis, corrupti itaque tenetur modi in? Blanditiis mollitia
+      necessitatibus at?
+    </p>
+    <br />
+    <!-- second task (field blank color red) -->
+    <b
+      >When a user clicks submit button leaving any of the input blank, pop-up a
+      alert informing user about blank field and set focus on that field alog
+      with changing its background colour to red.
+    </b>
+    <br />
+    <br />
+    <label for="input"
+      >FirstName <br /><input class="uName" type="name" /></label
+    ><br />
+    <label for="input">LastName <br /><input class="uName" type="name" /></label
+    ><br />
+    <br /><button id="submitBtn">Submit</button><br />
+    <br />
+    <!-- third task (Password check) -->
+    <b
+      >Validate to confirm password field on every character entered by the
+      user</b
+    ><br /><br />
+    <label for="password"
+      >Password: <br /><input type="password" id="password" /></label
+    ><br />
+    <label for="check password"
+      >Confirm Password: <br /><input type="password" id="cPassword" /></label
+    ><br />
+    <div id="errormsg"></div>
+    <br /><button>submit</button><br />
+
+    <!-- fourth task (qualification entry) -->
+    <br /><b
+      >Alllow user to enter the details of 10th board. Also user can add details
+      of 12th and graduation if he/she require. Provide a button to add delete
+      any number of rows for her qualification. </b
+    ><br />
+    <br />
+
+    <table class="data">
+      <thead>
+        <tr>
+          <th>Class</th>
+          <th>Board</th>
+          <th>Marks</th>
+          <th>Division</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="text" id="class" placeholder="Enter Class" /></td>
+          <td><input type="text" id="board" placeholder="Enter Board" /></td>
+          <td><input type="text" id="marks" placeholder="Enter Marks" /></td>
+          <td>
+            <input type="text" id="division" placeholder="Enter Division" />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button class="btn" id="addRowBtn">Add Row</button>
+    <button class="btn" id="deleteRowBtn">Delete Row</button>
+
+    <br />
+
+    <!-- fifth task (color change of rows) -->
+    <br /><b
+      >Change the background color of all the even rows in the table to
+      LightGrey and for odd rows to DodgerBlue when one of the button is
+      clicked.</b
+    ><br />
+    <br /><button id="even">Color Even Rows</button>
+    <button id="odd">Color Odd Rows</button><br />
+    <br />
+    <table>
+      <tr class="col">
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+      </tr>
+      <tr class="col">
+        <td>Alfrends Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+      </tr>
+      <tr class="col">
+        <td>Centro Commercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+      </tr>
+      <tr class="col">
+        <td>Ernst Handel</td>
+        <td>Ronald Mendel</td>
+        <td>Austria</td>
+      </tr>
+      <tr class="col">
+        <td>Island Trading</td>
+        <td>Helen Benett</td>
+        <td>UK</td>
+      </tr>
+      <tr class="col">
+        <td>Laughing Bacchus Winecellars</td>
+        <td>Yoshi</td>
+        <td>Canada</td>
+      </tr>
+    </table>
+  </body>
+  <script src="script.js"></script>
+</html>
